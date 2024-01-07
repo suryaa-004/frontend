@@ -4,25 +4,27 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
-    background-image:url(g2.jpg) ;
+    background-image: url(g2.jpg);
+    font-size: 16px;
 }
+
 .navbar{
     background-color: rgb(42, 44, 44);
     font-size: 20px;
     width: 100%;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    height: 55px;
+    height: 65px;
 }
 .head li{
     display: inline-block;
-    margin: 5px;  
+    margin: 5px;
 }
 .logo{
     font-size: 1.5em;
     color: whitesmoke;
-    text-shadow: 2px 2px 1px orangered;
+    text-shadow: 2px 2px 4px orangered;
 }
 header input{
     border-radius: 15px;
@@ -33,14 +35,17 @@ header input{
     color: azure;
     text-align:center;
 }
-.head li button{
+li .profile{
     border-radius: 15px;
-    width: 70px;
-    height: 28px;
-    border-color: rgb(228, 19, 89);
+    width: 80px;
+    height: 23px;
+    background-color:rgb(255, 255, 255);
+    padding:4px 7px 4px;
 }
-.head li button :hover{
-    color: rgb(13, 14, 13);
+.head li .profile:hover{
+    color: rgb(4, 53, 61);
+    background-color:rgb(69, 216, 113);
+    box-shadow: 5px 4px gold;
 }
 .head li a{
     color: rgb(219, 87, 197);
@@ -48,15 +53,99 @@ header input{
 .head li  :hover{
     color: chocolate;
 }
+
+
+    /* end of header  */
+
+    /* start of  box (browse)  */
 .box1 {
     padding-top: 30px ;
-    color: azure;
+    color: rgb(226, 255, 255);
     border-radius: 30px ;
-    background-color: rgb(78, 105, 163);
-    height: 150px;
-    width: 500px;
+    background-color: rgba(103, 96, 161, 0.788) ;
+    height: 250px;
+    width: 760px;
     text-align: center;
-    margin-left: 300px;
-    margin-top: 120px ;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
     box-sizing: border-box;
+    position: relative;
 }
+h1,h3{
+    padding-left: 20px;   
+}
+h3{
+    padding-top: 10px;
+}
+.box1 .h12{
+    text-transform: uppercase;
+    color:rgb(80, 249, 255);
+    font-size: 45px;
+}
+.box1 .browse{
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgb(255, 255, 255);
+}
+.box1 .browse:hover{
+    color: rgb(4, 53, 61);
+    background-color:rgb(69, 216, 113);
+    box-shadow: 5px 4px gold;
+}
+/* end of inner box (browse) */
+
+/* game list */
+div.game {
+    background-color: rgba(103, 96, 161, 0.788);
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    float: left; 
+    flex-direction: row;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+.game img{
+    width:170px;
+    height: auto;   
+    border: 4px solid grey;
+    border-radius: 20px;
+}
+.game .image{
+    margin: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    float: left;
+    width: 180px;
+    height: 255px;
+}
+.game .image:hover { 
+    box-shadow: 6px 6px white;
+}
+.game .gamename,.companyname{
+   text-align: left;
+   padding-left: 3px;
+}
+
+/* start of footer */
+.footer{
+    background-color: rgba(63, 64, 88, 0.993);
+    color: aliceblue;
+    position: relative;
+    margin-top: 790px;
+    padding: 20px;
+    display: flex;   
+    list-style: none;
+    
+}
+.pilot{
+    padding-left: 90px;
+    color: ghostwhite;
+}
+       
